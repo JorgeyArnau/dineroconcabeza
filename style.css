@@ -742,6 +742,46 @@ footer {
   font-size: 0.9rem;
   color: #aaaaaa;
 }
+.hero {
+  background: linear-gradient(to right, #1c1c1e, #2a2a2e);
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #ffffff;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #00b894;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero .subhero {
+  font-size: 1.3rem;
+  color: #ffffff;
+  opacity: 0.9;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0.5rem auto 0;
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+/* Animación */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
