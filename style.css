@@ -268,6 +268,66 @@ footer {
   margin: 0 1rem 1rem;
   color: #666;
 }
+.menu-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-principal .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.menu-principal .logo span {
+  color: #00b894;
+}
+
+.navegacion ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navegacion ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #00b894;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+.navegacion ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navegacion ul li a:hover {
+  color: #00b894;
+}
+
 
 
 
