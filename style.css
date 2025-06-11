@@ -440,6 +440,28 @@ footer {
   margin-top: 1rem;
   font-size: 1.2rem;
 }
+/* === UNIFICACIÓN VISUAL GENERAL === */
+body {
+  background-color: #1c1c1e;
+  color: #ffffff;
+}
+.hero-dinamico {
+  background: linear-gradient(to right, #1c1c1e, #2a2a2e);
+  height: 75vh;
+  color: #ffffff;
+}
+.btn {
+  background-color: #00b894;
+  color: #ffffff;
+}
+.btn:hover {
+  background-color: #019875;
+}
+.card-articulo p,
+.categoria p,
+footer {
+  color: #cccccc;
+}
 
 
 
