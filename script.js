@@ -14,4 +14,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+// Resaltar enlace activo en scroll
+const secciones = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.navegacion a');
 
+window.addEventListener('scroll', () => {
+  let scrollPos = window.scrollY + 150;
+
+  secciones.forEach(seccion => {
+    if (
+      scrollPos >= seccion.offsetTop &&
+      scrollPos < seccion.offsetTop + seccion.offsetHeight
+    ) {
+      navLinks.forEach(link => {
+        link.classList.remove('activo');
+        if (link.getAttribute('href').substring(1) === seccion.id) {
+          link.classList.add('activo');
+        }
+      });
+    }
+  });
+});
