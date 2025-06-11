@@ -137,4 +137,26 @@ footer {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+.valores {
+  background: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.valores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.valores-grid div {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 
