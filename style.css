@@ -327,6 +327,79 @@ footer {
 .navegacion ul li a:hover {
   color: #00b894;
 }
+.menu-elegante {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #121212;
+  color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.contenedor-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #00b894;
+}
+
+.menu-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.menu-nav ul li a:hover {
+  color: #00b894;
+}
+
+.menu-nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #00b894;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+.menu-nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.menu-nav ul li.social a {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
 
 
 
