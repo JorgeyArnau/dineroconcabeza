@@ -216,6 +216,58 @@ footer {
   background: white;
   box-shadow: 0 1px 6px rgba(0,0,0,0.1);
 }
+/* === Estilos para la vista de artículos por categoría === */
+.categoria-bloque {
+  padding: 3rem 2rem;
+}
+
+.categoria-bloque h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00b894;
+  text-align: center;
+}
+
+.grid-articulos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card-articulo {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  text-decoration: none;
+  color: #222;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card-articulo:hover {
+  transform: translateY(-5px);
+}
+
+.card-articulo img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-articulo h3 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  color: #00b894;
+}
+
+.card-articulo p {
+  font-size: 0.95rem;
+  margin: 0 1rem 1rem;
+  color: #666;
+}
 
 
 
