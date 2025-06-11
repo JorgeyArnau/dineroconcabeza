@@ -93,38 +93,12 @@ p {
   font-size: 1.2rem;
 }
 
-/* === HERO PERSONALIZADO OSCURO === */
-.hero-dinamico {
-  position: relative;
-  background: linear-gradient(to right, #000000, #1c1c1c);
-  padding: 6rem 2rem 4rem;
-  text-align: center;
-  color: #ffffff;
-}
-
-.hero-dinamico .hero-content h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin: 0 0 1rem;
-}
-
-.hero-dinamico .hero-content h1 span {
-  color: #00b894;
-}
-
-.hero-dinamico .hero-content p {
-  font-size: 1.2rem;
-  margin: 0 auto;
-  max-width: 800px;
-  color: #cccccc;
-}
-
-/* === HERO CLARO SECUNDARIO === */
+/* === HERO === */
 .hero {
   background: linear-gradient(to right, #00e0d0, #4facfe);
   padding: 4rem 2rem;
   text-align: center;
-  color: #222;
+  color: #ffffff;
   animation: fadeIn 1.2s ease;
 }
 
@@ -218,15 +192,13 @@ p {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* === ARTÍCULOS === */
-.info-section,
-.categoria-bloque {
+/* === ARTÍCULOS GENERALES === */
+.info-section {
   padding: 3rem 2rem;
   background-color: #ffffff;
   color: #333333;
 }
 
-.categoria-bloque h2,
 .info-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -288,78 +260,4 @@ footer {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
-}
-/* === NUEVO ESTILO PARA ARTÍCULOS DESTACADOS === */
-
-.info-section {
-  background-color: #fefefe;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.info-section h2 {
-  font-size: 2.5rem;
-  color: #00b894;
-  margin-bottom: 0.5rem;
-  position: relative;
-}
-
-.info-section h2::after {
-  content: '';
-  width: 60px;
-  height: 4px;
-  background: #00b894;
-  display: block;
-  margin: 0.5rem auto 0;
-  border-radius: 4px;
-}
-
-.intro-articulos {
-  font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 3rem;
-}
-
-.card-articulo {
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-articulo:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-}
-
-.card-articulo h3 {
-  color: #00b894;
-  font-size: 1.3rem;
-  margin: 1rem;
-}
-
-.card-articulo p {
-  margin: 0 1rem 1rem;
-  color: #555;
-  font-size: 1rem;
-}
-
-.card-articulo .btn {
-  align-self: flex-start;
-  margin: 0 1rem 1.5rem;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.9rem;
-  background: #00b894;
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.card-articulo .btn:hover {
-  background: #019875;
 }
