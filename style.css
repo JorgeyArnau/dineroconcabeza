@@ -93,12 +93,38 @@ p {
   font-size: 1.2rem;
 }
 
-/* === HERO === */
+/* === HERO PERSONALIZADO OSCURO === */
+.hero-dinamico {
+  position: relative;
+  background: linear-gradient(to right, #000000, #1c1c1c);
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-dinamico .hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 0 1rem;
+}
+
+.hero-dinamico .hero-content h1 span {
+  color: #00b894;
+}
+
+.hero-dinamico .hero-content p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 800px;
+  color: #cccccc;
+}
+
+/* === HERO CLARO SECUNDARIO === */
 .hero {
   background: linear-gradient(to right, #00e0d0, #4facfe);
   padding: 4rem 2rem;
   text-align: center;
-  color: #ffffff;
+  color: #222;
   animation: fadeIn 1.2s ease;
 }
 
