@@ -202,5 +202,20 @@ footer {
   margin: 0 1rem 1rem;
   color: #666;
 }
+.card-articulo img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.card-articulo h3 {
+  color: #00b894; /* verde atractivo */
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
 
 
