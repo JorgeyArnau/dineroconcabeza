@@ -3,17 +3,19 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f6;
+  background-color: #ffffff;
   color: #333333;
   scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
   color: #222222;
+  margin-top: 0;
 }
 
 p {
-  color: #555555;
+  color: #666666;
+  line-height: 1.6;
 }
 
 /* === MENÚ ELEGANTE === */
@@ -92,81 +94,71 @@ p {
 }
 
 /* === HERO === */
-.hero-dinamico {
-  position: relative;
-  background: linear-gradient(to right, #f2f5f7, #dde7ec);
-  height: 75vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hero {
+  background: linear-gradient(to right, #00e0d0, #4facfe);
+  padding: 4rem 2rem;
   text-align: center;
-  overflow: hidden;
-  animation: fadeSlide 1.5s ease-in-out;
+  color: #ffffff;
+  animation: fadeIn 1.2s ease;
 }
 
-.hero-dinamico .overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(255, 255, 255, 0.6);
-  z-index: 1;
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
 }
 
-.hero-dinamico .hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  padding: 2rem;
-}
-
-.hero-dinamico h1 span {
-  color: #00b894;
-}
-
-.hero-dinamico p {
-  margin-top: 1rem;
+.hero-content p {
   font-size: 1.2rem;
-  color: #333333;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-@keyframes fadeSlide {
-  0% { opacity: 0; transform: translateY(40px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-/* === SECCIONES === */
-.valores, .info-section, .categoria-bloque {
-  background-color: #ffffff;
-  color: #333333;
-  padding: 3rem 2rem;
-}
-
-.valores-grid {
+/* === CATEGORÍAS === */
+.categorias {
   display: flex;
-  gap: 2rem;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 2rem;
+  justify-content: space-around;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  gap: 2rem;
 }
 
-.valores-grid div {
-  background-color: #f8f9fa;
-  color: #333333;
-  padding: 2rem;
+.categoria {
+  flex: 1 1 300px;
+  background-color: #f0f0f0;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
-.valores-grid div:hover {
-  transform: translateY(-6px);
+.categoria:hover {
+  transform: translateY(-5px);
 }
 
-/* === BOTONES === */
+.categoria img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.categoria h2 {
+  color: #00b894;
+  margin-top: 1rem;
+}
+
+.categoria p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
 .btn {
   display: inline-block;
   background-color: #00b894;
-  color: #ffffff;
+  color: white;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
   border-radius: 8px;
@@ -177,7 +169,45 @@ p {
   background-color: #019875;
 }
 
-/* === TARJETAS DE ARTÍCULOS === */
+/* === VALORES === */
+.valores {
+  background: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.valores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.valores-grid div {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* === ARTÍCULOS === */
+.info-section,
+.categoria-bloque {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.categoria-bloque h2,
+.info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00b894;
+  text-align: center;
+}
+
 .grid-articulos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -186,11 +216,11 @@ p {
 }
 
 .card-articulo {
-  background-color: #ffffff;
+  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.05);
   text-decoration: none;
-  color: #333333;
+  color: #222222;
   overflow: hidden;
   transition: transform 0.2s ease;
 }
@@ -216,14 +246,20 @@ p {
 .card-articulo p {
   font-size: 0.95rem;
   margin: 0 1rem 1rem;
-  color: #555555;
+  color: #666666;
 }
 
 /* === FOOTER === */
 footer {
-  background-color: #121212;
-  padding: 2rem;
+  background: #f1f1f1;
+  padding: 1.5rem;
   text-align: center;
+  color: #666;
   font-size: 0.9rem;
-  color: #cccccc;
+}
+
+/* === ANIMACIONES === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
