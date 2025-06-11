@@ -462,6 +462,58 @@ body {
 footer {
   color: #cccccc;
 }
+/* === UNIFICACIÓN DE ESTILO OSCURO + CONTRASTE === */
+
+body {
+  background-color: #1c1c1e;
+  color: #ffffff;
+}
+
+/* Secciones generales */
+.valores,
+.info-section,
+.categoria-bloque {
+  background-color: #1c1c1e;
+  color: #ffffff;
+}
+
+/* Tarjetas de valores */
+.valores-grid div {
+  background-color: #2a2a2e;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+/* Subtextos y párrafos secundarios */
+p,
+.card-articulo p,
+.categoria p,
+footer {
+  color: #cccccc;
+}
+
+/* Botones */
+.btn {
+  background-color: #00b894;
+  color: #ffffff;
+}
+.btn:hover {
+  background-color: #019875;
+}
+
+/* Artículos */
+.card-articulo {
+  background-color: #2a2a2e;
+}
+.card-articulo h3 {
+  color: #00e0d0;
+}
+
 
 
 
