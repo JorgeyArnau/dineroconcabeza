@@ -153,6 +153,63 @@ p {
   margin: 0 auto;
 }
 
+/* === CATEGORÍAS DESTACADAS === */
+.categorias {
+  background: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.categoria {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 340px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  transition: transform 0.3s;
+}
+
+.categoria:hover {
+  transform: translateY(-5px);
+}
+
+.categoria img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.categoria h2 {
+  color: #00b894;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.categoria p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.categoria .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #00b894;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.categoria .btn:hover {
+  background: #009e7a;
+}
+
 /* === VALORES === */
 .valores {
   background: #fff;
