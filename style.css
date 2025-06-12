@@ -210,11 +210,26 @@ p {
   background: #009e7a;
 }
 
-/* === VALORES === */
+/* === VALORES RENOMBRADO Y MEJORADO === */
 .valores {
   background: #fff;
   padding: 4rem 2rem;
   text-align: center;
+}
+
+.valores h2 {
+  font-size: 2rem;
+  color: #00b894;
+  margin-bottom: 2rem;
+}
+
+.valores h2::after {
+  content: "Nuestro Propósito";
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 0.3rem;
+  color: #aaa;
 }
 
 .valores-grid {
@@ -233,42 +248,83 @@ p {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* === ARTÍCULOS DESTACADOS === */
-.info-section {
-  padding: 4rem 2rem;
-  background-color: #fdfdfd;
-  text-align: center;
-}
-
-.info-section h2 {
-  font-size: 2.5rem;
+.valores-grid div h3 {
   color: #00b894;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
 
-.intro-articulos {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 2rem;
+.valores-grid div p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Nuevos textos */
+.valores-grid div:nth-child(1) p {
+  content: '';
+  font-size: 0.95rem;
+  color: #444;
+  display: block;
+  content: "Educamos sobre cómo generar ingresos digitales, invertir con cabeza y gestionar tus finanzas de forma moderna.";
+}
+
+.valores-grid div:nth-child(2) p {
+  content: '';
+  font-size: 0.95rem;
+  color: #444;
+  display: block;
+  content: "Te enseñamos hábitos alimenticios y rutinas saludables para mejorar tu salud sin gastar más de lo necesario.";
+}
+
+.valores-grid div:nth-child(3) h3::before {
+  content: "Deporte";
+  color: #00b894;
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.valores-grid div:nth-child(3) h3 {
+  display: none;
+}
+
+.valores-grid div:nth-child(3) p {
+  content: '';
+  font-size: 0.95rem;
+  color: #444;
+  display: block;
+  content: "Promovemos la actividad física como pilar fundamental para una vida con energía, disciplina y bienestar integral.";
+}
+
+/* === ARTÍCULOS === */
+.info-section {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00b894;
+  text-align: center;
 }
 
 .grid-articulos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .card-articulo {
-  background: #fff;
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
   text-decoration: none;
   color: #222;
-  transition: transform 0.3s;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  transition: transform 0.2s ease;
 }
 
 .card-articulo:hover {
@@ -277,35 +333,22 @@ p {
 
 .card-articulo img {
   width: 100%;
-  height: 180px;
+  height: 160px;
   object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .card-articulo h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  margin: 1rem;
   color: #00b894;
-  margin: 1rem 0 0.5rem;
 }
 
 .card-articulo p {
-  font-size: 1rem;
-  color: #555;
-  padding: 0 1rem 1.5rem;
-  text-align: center;
-}
-
-.card-articulo .btn {
-  background: #00b894;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-bottom: 1rem;
-  transition: background 0.3s ease;
-}
-
-.card-articulo .btn:hover {
-  background: #009e7a;
+  font-size: 0.95rem;
+  margin: 0 1rem 1rem;
+  color: #666;
 }
 
 /* === FOOTER === */
@@ -322,13 +365,3 @@ footer {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.card-articulo h3 .etiqueta {
-  font-size: 0.9rem;
-  font-weight: 500;
-  background: #00b894;
-  color: #fff;
-  padding: 0.2rem 0.6rem;
-  border-radius: 6px;
-  margin-left: 0.5rem;
-}
-
