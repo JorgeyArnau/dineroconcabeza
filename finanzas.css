@@ -1,37 +1,14 @@
-/* === RESET GENERAL === */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   color: #333;
-  scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
-  color: #222;
-  margin-top: 0;
-}
-
-p {
-  color: #666;
-  line-height: 1.6;
-}
-
-/* === MENÚ ELEGANTE === */
-.menu-elegante {
-  position: sticky;
-  top: 0;
-  width: 100%;
+header.menu-elegante {
   background-color: #121212;
-  color: #fff;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.contenedor-header {
-  max-width: 1200px;
-  margin: 0 auto;
+  color: white;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -39,10 +16,10 @@ p {
 }
 
 .logo a {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #fff;
   text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
 }
 
 .logo span {
@@ -53,174 +30,83 @@ p {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .menu-nav ul li a {
-  color: #fff;
   text-decoration: none;
+  color: white;
   font-weight: 500;
-  position: relative;
-  transition: color 0.3s;
-}
-
-.menu-nav ul li a:hover {
-  color: #00b894;
-}
-
-.menu-nav ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #00b894;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease-out;
-}
-
-.menu-nav ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.menu-nav ul li.social a {
-  margin-left: 0.5rem;
-  font-size: 1.2rem;
-}
-
-/* === HERO === */
-.hero-dinamico {
-  position: relative;
-  background: url('assets/hero-bg.jpg') no-repeat center center/cover;
-  height: 90vh;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero-dinamico .overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-.hero-dinamico .hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  padding: 2rem;
-}
-
-.hero-dinamico h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.hero-dinamico h1 span {
-  color: #00b894;
-}
-
-.hero-dinamico p {
-  margin-top: 1rem;
-  font-size: 1.2rem;
 }
 
 .hero {
   background: linear-gradient(to right, #00e0d0, #4facfe);
-  padding: 4rem 2rem;
+  color: white;
   text-align: center;
-  color: #fff;
-  animation: fadeIn 1.2s ease;
+  padding: 4rem 2rem;
 }
 
-.hero-content h1 {
+.hero h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
 }
 
-.hero-content p {
+.hero p {
   font-size: 1.2rem;
   max-width: 700px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-/* === TARJETAS DE ARTÍCULOS === */
-.tarjetas-articulos {
-  background: #fff;
-  padding: 4rem 2rem;
+.articulos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 2rem;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: #fafafa;
 }
 
-.tarjeta {
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+.articulo {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
+  max-width: 320px;
   text-align: center;
-  transition: transform 0.3s ease;
 }
 
-.tarjeta:hover {
-  transform: translateY(-5px);
-}
-
-.tarjeta img {
+.articulo img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
-.tarjeta h3 {
-  font-size: 1.2rem;
+.articulo h2 {
   color: #00b894;
   margin: 1rem 0 0.5rem;
+  padding: 0 1rem;
+  font-size: 1.2rem;
 }
 
-.tarjeta p {
-  font-size: 1rem;
-  color: #444;
-  padding: 0 1rem 1rem;
+.articulo p {
+  padding: 0 1rem;
+  color: #555;
 }
 
-.tarjeta a.btn {
+.articulo .btn {
   display: inline-block;
-  margin-bottom: 1.5rem;
+  margin: 1rem auto;
   padding: 0.5rem 1rem;
   background: #00b894;
-  color: #fff;
-  border-radius: 8px;
+  color: white;
   text-decoration: none;
-  transition: background 0.3s ease;
+  border-radius: 8px;
 }
 
-.tarjeta a.btn:hover {
-  background: #009e7a;
-}
-
-/* === FOOTER === */
 footer {
   background: #f1f1f1;
-  padding: 1.5rem;
   text-align: center;
+  padding: 1.5rem;
   color: #666;
   font-size: 0.9rem;
-}
-
-/* === ANIMACIONES === */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
 }
