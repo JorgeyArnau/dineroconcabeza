@@ -224,7 +224,7 @@ p {
 }
 
 .valores h2::after {
-  content: "Nuestro Propósito";
+  content: "Nuestra misión con cada artículo";
   display: block;
   font-size: 0.9rem;
   font-weight: 400;
@@ -246,12 +246,14 @@ p {
   padding: 2rem;
   max-width: 300px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
 .valores-grid div h3 {
   color: #00b894;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  display: block;
 }
 
 .valores-grid div p {
@@ -259,21 +261,36 @@ p {
   color: #444;
 }
 
-/* Nuevos textos */
+.valores-grid div:nth-child(1) h3::before {
+  content: "Dinero";
+  color: #00b894;
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
 .valores-grid div:nth-child(1) p {
-  content: '';
+  content: "";
   font-size: 0.95rem;
   color: #444;
   display: block;
-  content: "Educamos sobre cómo generar ingresos digitales, invertir con cabeza y gestionar tus finanzas de forma moderna.";
+  content: "Buscamos ayudarte a construir fuentes de ingresos online, mejorar tu educación financiera y tomar decisiones económicas inteligentes.";
+}
+
+.valores-grid div:nth-child(2) h3::before {
+  content: "Salud";
+  color: #00b894;
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .valores-grid div:nth-child(2) p {
-  content: '';
+  content: "";
   font-size: 0.95rem;
   color: #444;
   display: block;
-  content: "Te enseñamos hábitos alimenticios y rutinas saludables para mejorar tu salud sin gastar más de lo necesario.";
+  content: "Promovemos un estilo de vida saludable con hábitos accesibles, guías claras y consejos prácticos para tu bienestar físico.";
 }
 
 .valores-grid div:nth-child(3) h3::before {
@@ -289,11 +306,11 @@ p {
 }
 
 .valores-grid div:nth-child(3) p {
-  content: '';
+  content: "";
   font-size: 0.95rem;
   color: #444;
   display: block;
-  content: "Promovemos la actividad física como pilar fundamental para una vida con energía, disciplina y bienestar integral.";
+  content: "Queremos inspirarte a moverte más, practicar deporte con constancia y aplicar técnicas que mejoren tu cuerpo, tu mente y tu rendimiento.";
 }
 
 /* === ARTÍCULOS === */
