@@ -11,9 +11,12 @@ header.menu-elegante {
   color: white;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* CENTRAR EN COLUMNA */
+  justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
+
 
 .logo a {
   text-decoration: none;
