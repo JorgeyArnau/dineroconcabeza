@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutina Volumen por Nivel</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Salud&nbsp;&Deporte</a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="#niveles">Rutina</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Rutinas para Ganar Volumen Muscular</h1>
+        <p>Selecciona tu nivel actual y comienza una rutina específicamente diseñada para ayudarte a aumentar tu masa muscular de forma progresiva, estructurada y con base científica. Estas rutinas están divididas por experiencia y te permitirán desarrollar fuerza y tamaño muscular adaptándote a tus necesidades.</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/volumen-icon.png" alt="Icono volumen">
+      </div>
+    </div>
+  </section>
+
+  <section class="explicacion-niveles">
+    <div class="container">
+      <p>Para lograr un aumento de masa muscular efectivo es esencial seguir un programa estructurado, adaptado a tu nivel físico. Los principiantes deben centrarse en aprender la técnica correcta y crear una base sólida. Los intermedios trabajan con cargas más exigentes y controlan el volumen total. Los avanzados optimizan la intensidad, frecuencia y periodización para maximizar la hipertrofia. Aquí podrás elegir la rutina ideal para ti.</p>
+    </div>
+  </section>
+
+  <section id="niveles" class="nivel-selector">
+    <button onclick="mostrarRutina('principiante')">Principiante</button>
+    <button onclick="mostrarRutina('intermedio')">Intermedio</button>
+    <button onclick="mostrarRutina('avanzado')">Avanzado</button>
+  </section>
+
+  <section id="principiante" class="info-section rutina hidden">
+    <h2>Rutina Principiante (3 días/semana)</h2>
+    <div class="dia-entrenamiento">
+      <h3>Lunes - Tren inferior</h3>
+      <p><strong>Sentadilla goblet con mancuerna:</strong> 3 series de 12 repeticiones. Controla el descenso y mantén la espalda recta.</p>
+      <p><strong>Puente de glúteos en el suelo:</strong> 3x15. Contrae al subir y pausa 1 segundo arriba.</p>
+      <p><strong>Elevación de talones (gemelos):</strong> 3x20. Apoya bien el metatarso y haz el movimiento completo.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Miércoles - Tren superior</h3>
+      <p><strong>Press con mancuernas en banco:</strong> 3x12. No bloquees los codos.</p>
+      <p><strong>Remo con banda elástica:</strong> 3x15. Cierra escapulas al final del movimiento.</p>
+      <p><strong>Curl de bíceps con botella:</strong> 3x15. Controla la subida y bajada.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Viernes - Full Body</h3>
+      <p><strong>Sentadilla + press con mancuerna:</strong> 3x10. Coordinación y técnica.</p>
+      <p><strong>Plancha sobre antebrazos:</strong> 3x30 segundos. Abdomen firme.</p>
+      <p><strong>Marcha rápida o elíptica:</strong> 20 minutos.</p>
+    </div>
+  </section>
+
+  <section id="intermedio" class="info-section rutina hidden">
+    <h2>Rutina Intermedio (4 días/semana)</h2>
+    <div class="dia-entrenamiento">
+      <h3>Lunes - Pierna A</h3>
+      <p><strong>Sentadilla trasera con barra:</strong> 4x8. Controla el descenso.</p>
+      <p><strong>Zancadas caminando:</strong> 3x12 por pierna. Mantén el tronco vertical.</p>
+      <p><strong>Prensa de piernas:</strong> 3x12. Empuja con los talones.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Martes - Torso A (empuje)</h3>
+      <p><strong>Press banca plano:</strong> 4x8. Baja hasta el pecho.</p>
+      <p><strong>Press militar sentado:</strong> 3x10.</p>
+      <p><strong>Fondos asistidos:</strong> 3x fallo.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Jueves - Pierna B</h3>
+      <p><strong>Sentadilla frontal:</strong> 3x10.</p>
+      <p><strong>Peso muerto rumano:</strong> 4x8. Mantén espalda recta.</p>
+      <p><strong>Gemelos sentado:</strong> 3x20.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Viernes - Torso B (tracción)</h3>
+      <p><strong>Dominadas asistidas:</strong> 4x8.</p>
+      <p><strong>Remo con barra T:</strong> 3x10.</p>
+      <p><strong>Curl martillo + face pull:</strong> 3x12 cada uno.</p>
+    </div>
+  </section>
+
+  <section id="avanzado" class="info-section rutina hidden">
+    <h2>Rutina Avanzado (5-6 días/semana)</h2>
+    <div class="dia-entrenamiento">
+      <h3>Lunes - Empuje Pecho y Hombros</h3>
+      <p><strong>Press banca plano:</strong> 5x5.</p>
+      <p><strong>Press inclinado con mancuernas:</strong> 4x8.</p>
+      <p><strong>Elevaciones laterales:</strong> 4x15.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Martes - Pierna completa</h3>
+      <p><strong>Sentadilla profunda:</strong> 5x6.</p>
+      <p><strong>Peso muerto rumano:</strong> 4x10.</p>
+      <p><strong>Hip thrust:</strong> 4x10.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Miércoles - Tracción espalda y bíceps</h3>
+      <p><strong>Dominadas lastradas:</strong> 4x6.</p>
+      <p><strong>Remo con barra:</strong> 4x10.</p>
+      <p><strong>Curl bíceps en banco inclinado:</strong> 3x12.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Jueves - Core y movilidad</h3>
+      <p><strong>Plancha con carga:</strong> 3x40s.</p>
+      <p><strong>Rueda abdominal:</strong> 3x10.</p>
+      <p><strong>Estiramientos activos:</strong> 15 minutos.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Viernes - Torso completo</h3>
+      <p><strong>Press banca + jalón al pecho:</strong> 4x10 superserie.</p>
+      <p><strong>Fondos + remo mancuernas:</strong> 4x10 superserie.</p>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question">¿Cuántas calorías debo consumir para ganar masa muscular?</button>
+        <div class="faq-answer">
+          <p>Para un volumen limpio, añade 300-500 kcal sobre tu gasto diario. Ajusta cada 2 semanas según tu progreso.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Cuánta proteína necesito al día?</button>
+        <div class="faq-answer">
+          <p>Entre 1.6 y 2.2g por kilo de peso corporal. Divide el total en 4-5 comidas con buena distribución.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Cuándo debo cambiar la rutina?</button>
+        <div class="faq-answer">
+          <p>Cada 6-8 semanas o cuando notes estancamiento, fatiga excesiva o falta de progresión en cargas.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Puedo ganar músculo sin suplementos?</button>
+        <div class="faq-answer">
+          <p>Sí. Los suplementos son una ayuda, pero una alimentación adecuada y entrenamiento constante son lo principal.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Cuánto descanso necesito entre series?</button>
+        <div class="faq-answer">
+          <p>Entre 60 y 90 segundos para hipertrofia. Si trabajas fuerza (series de 5 repeticiones o menos), 2-3 minutos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Salud & Deporte | Proyecto educativo</p>
+  </footer>
+
+  <script>
+    function mostrarRutina(nivel) {
+      const secciones = document.querySelectorAll('.rutina');
+      secciones.forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(nivel).classList.remove('hidden');
+    }
+  </script>
+  <script src="js/faq.js"></script>
+</body>
+</html>
