@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutina Volumen por Nivel</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Salud&nbsp;&Deporte</a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="#niveles">Rutina</a>
+      </nav>
+    </div>
+  </header>
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Rutinas para Mejorar el Rendimiento Deportivo</h1>
+      <p>Desarrolla velocidad, potencia, agilidad y resistencia con una planificación específica basada en los pilares del entrenamiento atlético. Estas rutinas están enfocadas en estimular al sistema neuromuscular, mejorar la eficiencia técnica y optimizar la producción de fuerza en situaciones dinámicas.</p>
+    </div>
+    <div class="hero-image">
+      <img src="assets/rendimiento-icon.png" alt="Icono rendimiento">
+    </div>
+  </div>
+</section>
+
+<section class="explicacion-niveles">
+  <div class="container">
+    <p>Estas rutinas están diseñadas para mejorar las capacidades atléticas fundamentales como fuerza reactiva, aceleración, coordinación intermuscular y recuperación activa. A través de ejercicios pliométricos, entrenamiento de sprint, movimientos balísticos y circuitos funcionales, se entrena el cuerpo para rendir mejor en contextos exigentes, tanto deportivos como recreativos.</p>
+  </div>
+</section>
+
+<section id="niveles" class="nivel-selector">
+  <button onclick="mostrarRutina('principiante')">Principiante</button>
+  <button onclick="mostrarRutina('intermedio')">Intermedio</button>
+  <button onclick="mostrarRutina('avanzado')">Avanzado</button>
+</section>
+
+<section id="principiante" class="info-section rutina hidden">
+  <h2>Principiante (3 días/semana)</h2>
+  <div class="dia-entrenamiento">
+    <h3>Lunes - Coordinación básica y movilidad</h3>
+    <p><strong>Skipping bajo:</strong> 3x30s.</p>
+    <p><strong>Saltos sobre línea:</strong> 3x20.</p>
+    <p><strong>Estiramientos dinámicos:</strong> 10 minutos.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Miércoles - Fuerza básica</h3>
+    <p><strong>Sentadilla con peso corporal:</strong> 3x15.</p>
+    <p><strong>Flexiones inclinadas:</strong> 3x10.</p>
+    <p><strong>Remo con banda:</strong> 3x12.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Viernes - Acondicionamiento general</h3>
+    <p><strong>Jumping jacks:</strong> 3x30s.</p>
+    <p><strong>Plancha frontal:</strong> 3x20s.</p>
+    <p><strong>Carrera continua suave:</strong> 10-15 minutos.</p>
+  </div>
+</section>
+
+<section id="intermedio" class="info-section rutina hidden">
+  <h2>Intermedio (4 días/semana)</h2>
+  <div class="dia-entrenamiento">
+    <h3>Lunes - Velocidad y técnica de carrera</h3>
+    <p><strong>Drills de skipping + talones + zancadas:</strong> 3x20m cada uno.</p>
+    <p><strong>Sprint 10x20m:</strong> pausa 30s.</p>
+    <p><strong>Estiramiento dinámico:</strong> 10 minutos.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Martes - Fuerza funcional</h3>
+    <p><strong>Sentadilla con salto:</strong> 3x10.</p>
+    <p><strong>Push-up explosivas:</strong> 3x10.</p>
+    <p><strong>Remo TRX o con mancuerna:</strong> 3x12.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Jueves - Circuito metabólico</h3>
+    <p><strong>3 rondas:</strong> 10 burpees + 15 swings + 20 saltos al cajón.</p>
+    <p><strong>Descanso:</strong> 90 segundos entre rondas.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Viernes - Core y equilibrio</h3>
+    <p><strong>Plancha + pase balón:</strong> 3x30s.</p>
+    <p><strong>Bird-dog dinámico:</strong> 3x15.</p>
+    <p><strong>Elevaciones de piernas colgado:</strong> 3x10.</p>
+  </div>
+</section>
+
+<section id="avanzado" class="info-section rutina hidden">
+  <h2>Avanzado (6 días/semana)</h2>
+  <div class="dia-entrenamiento">
+    <h3>Lunes - Potencia tren inferior</h3>
+    <p><strong>Sentadilla frontal pesada:</strong> 5x5.</p>
+    <p><strong>Saltos al cajón alto:</strong> 4x8.</p>
+    <p><strong>Peso muerto sumo:</strong> 4x6.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Martes - Sprints y reacción</h3>
+    <p><strong>Sprints 6x30m:</strong> pausa 1min.</p>
+    <p><strong>Ejercicio reacción (ordenes visuales):</strong> 3x5min.</p>
+    <p><strong>Fartlek:</strong> 20 min.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Miércoles - Core avanzado</h3>
+    <p><strong>Plancha lateral con peso:</strong> 3x30s por lado.</p>
+    <p><strong>Rueda abdominal:</strong> 4x10.</p>
+    <p><strong>Crunch con polea:</strong> 4x12.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Jueves - Tren superior potencia</h3>
+    <p><strong>Push press:</strong> 5x5.</p>
+    <p><strong>Remo explosivo con barra:</strong> 4x6.</p>
+    <p><strong>Flexiones pliométricas:</strong> 4x10.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Viernes - Técnica deportiva</h3>
+    <p><strong>Drills de agilidad:</strong> 3x10m.</p>
+    <p><strong>Ejercicios específicos del deporte:</strong> 20 minutos.</p>
+    <p><strong>Estiramientos activos:</strong> 10 minutos.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Sábado - Recuperación activa</h3>
+    <p><strong>Movilidad general:</strong> 15 minutos.</p>
+    <p><strong>Caminata ligera o bici:</strong> 30 minutos.</p>
+    <p><strong>Espuma y estiramientos:</strong> 10 minutos.</p>
+  </div>
+</section>
+
+<section class="faq-section">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <button class="faq-question">¿Esta rutina me sirve para cualquier deporte?</button>
+      <div class="faq-answer">
+        <p>Sí. Mejora cualidades como velocidad, fuerza, potencia y resistencia que son transferibles a la mayoría de deportes.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">¿Puedo combinar esta rutina con entrenamientos técnicos?</button>
+      <div class="faq-answer">
+        <p>Por supuesto. Es recomendable que los días de técnica se planifiquen después del trabajo físico o en días separados.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">¿Es necesario usar pesas?</button>
+      <div class="faq-answer">
+        <p>No siempre, pero para estimular la fuerza máxima y potencia es ideal usar cargas progresivas.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">¿Cómo mido mi progreso?</button>
+      <div class="faq-answer">
+        <p>Mejoras en la velocidad, número de repeticiones explosivas, control postural y recuperación más rápida son indicadores clave.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <footer>
+    <p>&copy; 2025 Salud & Deporte | Proyecto educativo</p>
+  </footer>
+
+  <script>
+    function mostrarRutina(nivel) {
+      const secciones = document.querySelectorAll('.rutina');
+      secciones.forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(nivel).classList.remove('hidden');
+    }
+  </script>
+  <script src="js/faq.js"></script>
+</body>
+</html>
