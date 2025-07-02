@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutina Definición por Nivel</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    .explicacion-niveles {
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      padding: 2rem 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .explicacion-niveles .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .explicacion-niveles p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      text-align: center;
+      color: #333;
+      font-weight: 400;
+    }
+    .info-section h2 {
+      color: #0077cc;
+    }
+    .faq-section {
+      background: #f8f9fa;
+      padding: 2rem;
+      margin-top: 3rem;
+      border-top: 1px solid #ddd;
+    }
+    .faq-section h2 {
+      font-size: 2rem;
+      color: #333;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .faq {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+    .faq-item h3 {
+      font-size: 1.2rem;
+      color: #0077cc;
+      margin-bottom: 0.5rem;
+    }
+    .faq-item p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Salud&nbsp;&Deporte</a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="#niveles">Rutina</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Rutinas de Definición Muscular</h1>
+        <p>Elige tu nivel de experiencia y accede a una rutina adaptada científicamente para ti.</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/definicion-icon.png" alt="Icono definición">
+      </div>
+    </div>
+  </section>
+
+  <section class="explicacion-niveles">
+    <div class="container">
+      <p>No todos los entrenamientos sirven para todos. El progreso depende de adaptar la rutina a tu nivel físico y experiencia. Aquí puedes seleccionar tu nivel actual —principiante, intermedio o avanzado— y accederás a un plan estructurado, realista y basado en evidencia científica para ayudarte a definir tu cuerpo de forma eficiente y segura.</p>
+    </div>
+  </section>
+
+  <section id="niveles" class="nivel-selector">
+    <button onclick="mostrarRutina('principiante')">Principiante</button>
+    <button onclick="mostrarRutina('intermedio')">Intermedio</button>
+    <button onclick="mostrarRutina('avanzado')">Avanzado</button>
+  </section>
+
+  <section id="principiante" class="info-section rutina hidden">
+    <h2>Rutina Principiante</h2>
+    <div class="dia-entrenamiento">
+      <h3>Lunes - Cuerpo completo</h3>
+      <p><strong>Sentadilla al aire:</strong> 3x15. Enfócate en mantener la espalda recta y bajar controladamente.</p>
+      <p><strong>Flexiones inclinadas:</strong> 3x10. Apoya manos sobre una superficie elevada si eres nuevo.</p>
+      <p><strong>Remo con banda:</strong> 3x12. Mantén los codos cerca del cuerpo.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Miércoles - Core y cardio</h3>
+      <p><strong>Plancha:</strong> 3x30 segundos. Aprieta glúteos y abdomen.</p>
+      <p><strong>Bicicleta estática:</strong> 15 minutos. Ritmo moderado.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Viernes - Full Body</h3>
+      <p><strong>Puente de glúteos:</strong> 3x12. Activa bien los glúteos.</p>
+      <p><strong>Press de hombros con botellas:</strong> 3x10. Eleva controladamente.</p>
+      <p><strong>Marcha rápida:</strong> 20 minutos.</p>
+    </div>
+  </section>
+
+  <section id="intermedio" class="info-section rutina hidden">
+    <h2>Rutina Intermedio</h2>
+    <div class="dia-entrenamiento">
+      <h3>Lunes - Tren inferior + HIIT</h3>
+      <p><strong>Sentadilla con peso:</strong> 4x10. Mantén el peso centrado.</p>
+      <p><strong>Zancadas caminando:</strong> 3x12/12. Activa el core.</p>
+      <p><strong>Sprint 30" + 30" descanso:</strong> 10 repeticiones.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Miércoles - Tren superior</h3>
+      <p><strong>Press banca:</strong> 4x8. Tiempos controlados.</p>
+      <p><strong>Remo con barra:</strong> 3x10. Evita encorvarte.</p>
+      <p><strong>Dominadas asistidas:</strong> 3x hasta fallo.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Viernes - Metabólico + Core</h3>
+      <p><strong>Circuito:</strong> burpees + escaladores + squat jump, 3 rondas x 10 reps.</p>
+      <p><strong>Crunch en V:</strong> 3x15.</p>
+      <p><strong>Plancha lateral:</strong> 2x30 segundos por lado.</p>
+    </div>
+  </section>
+
+  <section id="avanzado" class="info-section rutina hidden">
+    <h2>Rutina Avanzado</h2>
+    <div class="dia-entrenamiento">
+      <h3>Lunes - Fuerza Full Body</h3>
+      <p><strong>Sentadilla profunda con barra:</strong> 5x5. Control de descenso y movilidad de tobillo.</p>
+      <p><strong>Press militar:</strong> 4x6. Mantén tensión abdominal.</p>
+      <p><strong>Peso muerto rumano:</strong> 4x8. Enfócate en glúteo e isquio.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Miércoles - Hipertrofia Torso</h3>
+      <p><strong>Superserie:</strong> jalón al pecho + press inclinado con mancuernas, 4x10.</p>
+      <p><strong>Fondos en paralelas:</strong> 3x fallo.</p>
+      <p><strong>Curl martillo + elevaciones laterales:</strong> 3x12 cada uno.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Viernes - Cardio + Core avanzado</h3>
+      <p><strong>EMOM 20 min:</strong> 5 burpees + 10 swing kettlebell + 15 saltos al cajón.</p>
+      <p><strong>Rueda abdominal:</strong> 3x10 reps.</p>
+      <p><strong>Crunch con cable:</strong> 3x15.</p>
+    </div>
+  </section>
+
+<section class="faq-section">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <button class="faq-question">¿Debo hacer cardio antes o después del entrenamiento de fuerza?</button>
+      <div class="faq-answer">
+        <p>Para objetivos de definición, es más efectivo hacer el entrenamiento de fuerza primero y dejar el cardio para después, ya que así maximizas la energía disponible para levantar peso.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Qué dieta debo seguir mientras hago una rutina de definición?</button>
+      <div class="faq-answer">
+        <p>Una dieta hipocalórica con suficiente proteína (al menos 1.6 g/kg de peso corporal) es ideal para conservar masa muscular durante la pérdida de grasa.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Puedo hacer esta rutina si tengo poco tiempo?</button>
+      <div class="faq-answer">
+        <p>Sí. Cada rutina está pensada para durar entre 45 y 60 minutos. Si tienes menos tiempo, puedes optar por un formato de circuito o eliminar algún ejercicio accesorio.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Necesito gimnasio o puedo entrenar en casa?</button>
+      <div class="faq-answer">
+        <p>La mayoría de las rutinas pueden adaptarse con el uso de bandas elásticas, mancuernas o incluso el propio peso corporal. Se indican variantes en caso necesario.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Cuántos días debo entrenar a la semana?</button>
+      <div class="faq-answer">
+        <p>Idealmente entre 3 y 5 días, dependiendo de tu nivel. El descanso también es parte esencial del progreso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Salud & Deporte | Proyecto educativo</p>
+  </footer>
+
+  <script>
+    function mostrarRutina(nivel) {
+      const secciones = document.querySelectorAll('.rutina');
+      secciones.forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(nivel).classList.remove('hidden');
+    }
+  </script>
+  <script src="js/faq.js"></script>
+
+</body>
+</html>
