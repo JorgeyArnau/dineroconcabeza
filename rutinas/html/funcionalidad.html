@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutina Funcionalidad por Nivel</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Salud&nbsp;&Deporte</a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="#niveles">Rutina</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Rutinas de Funcionalidad Física</h1>
+      <p>Trabaja tu movilidad, equilibrio, control motor y fuerza útil para mejorar tu rendimiento en actividades cotidianas y prevenir lesiones. Este programa está diseñado para fortalecer las cadenas musculares completas, activar el core y mejorar la propiocepción a través de movimientos prácticos y eficaces.</p>
+    </div>
+    <div class="hero-image">
+      <img src="assets/funcionalidad-icon.png" alt="Icono funcionalidad">
+    </div>
+  </div>
+</section>
+
+<section class="explicacion-niveles">
+  <div class="container">
+    <p>Las rutinas funcionales tienen como objetivo mejorar tu desempeño físico general a través de ejercicios que implican múltiples cadenas musculares, estabilidad central y control corporal. Se prioriza la calidad de movimiento, la técnica, la prevención de lesiones y el fortalecimiento de patrones motores básicos. Además, este tipo de entrenamiento favorece el rendimiento deportivo y la autonomía en el día a día.</p>
+  </div>
+</section>
+
+<section id="niveles" class="nivel-selector">
+  <button onclick="mostrarRutina('principiante')">Principiante</button>
+  <button onclick="mostrarRutina('intermedio')">Intermedio</button>
+  <button onclick="mostrarRutina('avanzado')">Avanzado</button>
+</section>
+
+<section id="principiante" class="info-section rutina hidden">
+  <h2>Principiante (3 días/semana)</h2>
+  <div class="dia-entrenamiento">
+    <h3>Lunes - Estabilidad y movilidad</h3>
+    <p><strong>Sentadilla al aire:</strong> 3x15.</p>
+    <p><strong>Plancha con apoyo de rodillas:</strong> 3x20s.</p>
+    <p><strong>Marcha con rodilla elevada:</strong> 2x20 pasos.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Miércoles - Equilibrio y core</h3>
+    <p><strong>Bird-dog:</strong> 3x10 por lado.</p>
+    <p><strong>Puente glúteo:</strong> 3x12.</p>
+    <p><strong>Equilibrio a una pierna:</strong> 3x20s por pierna.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Viernes - Coordinación y resistencia</h3>
+    <p><strong>Skipping bajo:</strong> 3x30s.</p>
+    <p><strong>Estocada hacia atrás con apoyo:</strong> 3x10 por pierna.</p>
+    <p><strong>Jumping jacks controlados:</strong> 2x20.</p>
+  </div>
+</section>
+
+<section id="intermedio" class="info-section rutina hidden">
+  <h2>Intermedio (4 días/semana)</h2>
+  <div class="dia-entrenamiento">
+    <h3>Lunes - Tren inferior funcional</h3>
+    <p><strong>Sentadilla goblet + movilidad de cadera:</strong> 4x10.</p>
+    <p><strong>Zancada lateral:</strong> 3x12 por lado.</p>
+    <p><strong>Balanceo con kettlebell:</strong> 3x15.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Martes - Core dinámico</h3>
+    <p><strong>Plancha con elevación de pierna:</strong> 3x30s.</p>
+    <p><strong>Rueda abdominal con banda:</strong> 3x10.</p>
+    <p><strong>Crunch cruzado:</strong> 3x15.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Jueves - Torso y tracción</h3>
+    <p><strong>Remo con TRX o banda:</strong> 4x10.</p>
+    <p><strong>Push-up en T:</strong> 3x10.</p>
+    <p><strong>Press con mancuernas inestables:</strong> 3x12.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Viernes - Full body funcional</h3>
+    <p><strong>Burpee modificado:</strong> 3x10.</p>
+    <p><strong>Farmer walk (paseo del granjero):</strong> 3x20 metros.</p>
+    <p><strong>Salto con cuerda:</strong> 3x30s.</p>
+  </div>
+</section>
+
+<section id="avanzado" class="info-section rutina hidden">
+  <h2>Avanzado (5 días/semana)</h2>
+  <div class="dia-entrenamiento">
+    <h3>Lunes - Core + estabilidad central</h3>
+    <p><strong>Plancha con disco:</strong> 4x40s.</p>
+    <p><strong>Pallof press con banda:</strong> 3x15.</p>
+    <p><strong>Rueda abdominal:</strong> 3x12.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Martes - Tren inferior funcional</h3>
+    <p><strong>Sentadilla a una pierna (pistols):</strong> 3x8 por pierna.</p>
+    <p><strong>Salto lateral con estabilidad:</strong> 3x12 por lado.</p>
+    <p><strong>Walking lunges con carga:</strong> 3x20 pasos.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Miércoles - Torso + propiocepción</h3>
+    <p><strong>Press en fitball:</strong> 4x10.</p>
+    <p><strong>Remo unilaterial con inestabilidad:</strong> 3x12.</p>
+    <p><strong>Flexiones con palmada:</strong> 3x10.</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Jueves - Circuito funcional</h3>
+    <p><strong>5 rondas:</strong> escaladores (30s), swing (15), burpees (10), remo con banda (15).</p>
+  </div>
+  <div class="dia-entrenamiento">
+    <h3>Viernes - Movilidad + técnica</h3>
+    <p><strong>Secuencia movilidad articular:</strong> 10 minutos.</p>
+    <p><strong>Trabajo respiratorio + core:</strong> 3x5 mins.</p>
+    <p><strong>Estiramientos activos:</strong> 15 minutos.</p>
+  </div>
+</section>
+
+<section class="faq-section">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <button class="faq-question">¿Esta rutina es útil para personas mayores?</button>
+      <div class="faq-answer">
+        <p>Sí. Las rutinas funcionales están pensadas para todos los niveles, incluso personas mayores que buscan mantener su autonomía y prevenir caídas.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">¿Puedo hacer esta rutina si tengo lesiones previas?</button>
+      <div class="faq-answer">
+        <p>Es recomendable adaptar los ejercicios o consultar con un fisioterapeuta. Esta rutina mejora la recuperación si se aplica con control.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">¿Qué equipamiento necesito?</button>
+      <div class="faq-answer">
+        <p>Bandas elásticas, una mancuerna o kettlebell y, si tienes, un bosu o fitball para progresar en inestabilidad.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">¿Cuántos días son ideales?</button>
+      <div class="faq-answer">
+        <p>3 a 5 días dependiendo del nivel y disponibilidad. No es necesario hacer todos los días para ver mejoras.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <footer>
+    <p>&copy; 2025 Salud & Deporte | Proyecto educativo</p>
+  </footer>
+
+  <script>
+    function mostrarRutina(nivel) {
+      const secciones = document.querySelectorAll('.rutina');
+      secciones.forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(nivel).classList.remove('hidden');
+    }
+  </script>
+  <script src="js/faq.js"></script>
+</body>
+</html>
